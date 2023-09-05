@@ -32,18 +32,16 @@ public class Persona {
 
     public Persona(String nombre) {
         this.nombre = nombre;
-        this.cedula = generarCedula();
+        this.cedula = cuentaCedulas;
+        cuentaCedulas++;
         totalPersonas++;
     }
     
     public Persona() {
         this.nombre = "";
-        this.cedula = generarCedula();
+        this.cedula = cuentaCedulas;
+        cuentaCedulas++;
         totalPersonas++;
-    }
-    
-    public long generarCedula() {
-    	return cuentaCedulas++;
     }
     
     public long getCedula() {
