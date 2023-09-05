@@ -5,10 +5,11 @@ public class Persona {
 	final long cedula;
     String nombre;
     static int totalPersonas;
-    static int cuentaCedulas = 0;
+    static long cuentaCedulas;
     
     static {
         totalPersonas = 0;
+        cuentaCedulas = 0;
     }
 
     public Persona(long cedula, String nombre) {
